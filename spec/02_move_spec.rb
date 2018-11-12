@@ -6,7 +6,7 @@ describe './lib/move.rb' do
     expect(defined?(move)).to be_truthy
   end
 
-  context '#move' do
+  context move("X", "O", "X") do
     it 'accepts 3 arguments: the board, the position a player wants to fill and their char, X or O' do
       expect{move}.to raise_error(ArgumentError)
     end
