@@ -1,6 +1,6 @@
 require_relative "../lib/move.rb"
 
-describe input_to_index(20) do
+describe input_to_index("1" - "9") do
 
   it 'converts a user_input to an integer' do
     user_input = "1"
@@ -13,7 +13,7 @@ describe input_to_index(20) do
     user_input = "6"
     converted_input = input_to_index(user_input)
 
-    expect(converted_input).to be(5)
+    expect(converted_input).to_i(5)
   end
 
   it 'returns -1 for strings without integers' do
